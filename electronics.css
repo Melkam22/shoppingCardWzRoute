@@ -1,0 +1,331 @@
+/* img-detail link */
+/* .frameDetail {
+  width: 80%;
+  height: 350px;
+  margin-left: -8%;
+  background: rgba(158, 18, 11, 0.9);
+  position: absolute;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.deleteShow {
+  position: absolute;
+  margin-left: 45%;
+  margin-top: -12%;
+  color: white;
+} */
+
+/* advertisement*/
+.h4 {
+  width: 99%;
+  height: 100px;
+  margin-left: 1%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+slider {
+  display: block;
+  width: 98%;
+  height: 100px;
+  /* background: rgba(24, 118, 3, 0.3); */
+  overflow: hidden;
+  position: absolute;
+}
+slider > * {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* background: rgba(58, 28, 151, 0.3); */
+  animation: slide 25s infinite;
+  overflow: hidden;
+}
+slide:nth-child(1) {
+  left: 0%;
+  animation-delay: -8s;
+  background-image: url(images/shirt7.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+slide:nth-child(2) {
+  left: 5%;
+  animation-delay: -16s;
+  background-image: url(images/shirt3.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+slide:nth-child(3) {
+  left: 10%;
+  animation-delay: -24s;
+  background-image: url(images/shirt5.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+slide p {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  /* display: flex; */
+  width: 50%;
+  margin-top: 5px;
+  color: black;
+}
+@keyframes slide {
+  0% {
+    left: 100%;
+    width: 100%;
+  }
+  5% {
+    left: 0%;
+  }
+  25% {
+    left: 0%;
+  }
+  30% {
+    left: -100%;
+    width: 100%;
+  }
+  30.0001% {
+    left: -100%;
+    width: 0%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+/* search-bar */
+#myUl {
+  padding: 0;
+  margin: 0;
+  width: 250px;
+}
+#myInput {
+  background-position: 10px 12px;
+  width: 250px;
+  font-size: 16px;
+  padding: 12px 20px 12px 35px;
+  border: 1px dotted black;
+  margin-bottom: 12px;
+  background-repeat: repeat;
+}
+/* contact function for each box*/
+
+.contact-box {
+  width: 250px;
+  height: 50px;
+  cursor: pointer;
+  border: 1px dotted blue;
+}
+.pText {
+  color: white;
+  margin-top: -2px;
+  font-size: 14px;
+}
+
+/*
+.contact3 {
+  font-size: 16px;
+  color: blue;
+  font-weight: bold;
+}
+.contact4 {
+  font-size: 16px;
+  color: blue;
+  font-weight: bold;
+}
+.contact5 {
+  font-size: 16px;
+  color: blue;
+  font-weight: bold;
+}
+.contact6 {
+  font-size: 16px;
+  color: blue;
+  font-weight: bold;
+}
+.contact7 {
+  font-size: 16px;
+  color: blue;
+  font-weight: bold;
+}
+.contact8 {
+  font-size: 16px;
+  color: blue;
+  font-weight: bold;
+}
+.contact9 {
+  font-size: 16px;
+  color: blue;
+  font-weight: bold;
+}
+.contact10 {
+  font-size: 16px;
+  color: blue;
+  font-weight: bold;
+}
+*/ /* .contactText1 {
+  display: none;
+  color: black;
+} */
+/* .contactText2 {
+  display: none;
+  color: black;
+}
+.contactText3 {
+  display: none;
+  color: black;
+}
+.contactText4 {
+  display: none;
+  color: black;
+}
+.contactText5 {
+  display: none;
+  color: black;
+}
+.contactText6 {
+  display: none;
+  color: black;
+}
+.contactText7 {
+  display: none;
+  color: black;
+}
+.contactText8 {
+  display: none;
+  color: black;
+}
+.contactText9 {
+  display: none;
+  color: black;
+}
+.contactText10 {
+  display: none;
+  color: black;
+} */
+/* shopping cart */
+h2 {
+  color: blue;
+  text-align: center;
+}
+h3 {
+  text-align: center;
+  color: skyblue;
+}
+/*route*/
+.myUl {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: rgba(42, 53, 73, 0.5);
+  width: 80%;
+  height: 50px;
+  margin-left: 10%;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  font-size: 20px;
+  color: greenyellow;
+  font-weight: bold;
+}
+a:hover {
+  color: green;
+}
+/* search-box */
+.search {
+  width: 20%;
+  height: 30px;
+  margin-left: 40%;
+  font-size: 18px;
+}
+
+/* products-list */
+.main {
+  width: 94%;
+  min-height: 80vh;
+  margin-left: 3%;
+}
+.add-btn {
+  width: 150px;
+  margin-left: 80px;
+  border: none;
+  background: rgba(58, 218, 151, 0.7);
+}
+.list-product {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.electron {
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1%;
+}
+.prod-inside {
+  width: 92%;
+  height: 40px;
+  border-top: 4px solid silver;
+
+  display: flex;
+  justify-content: space-evenly;
+}
+.img1 {
+  height: 120px;
+  width: 120px;
+}
+/* basket-part */
+.basket-list {
+  width: 60%;
+  min-height: 50px;
+  border: 2px solid silver;
+  margin-left: 20%;
+  margin-top: 2%;
+}
+.basket-heading {
+  display: flex;
+  justify-content: space-evenly;
+}
+.basket-products-quantity {
+  width: 50px;
+}
+.btn-remove {
+  width: 100px;
+  background: rgba(240, 118, 53, 0.9);
+  border: none;
+  height: 25px;
+}
+.basket-products-list {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+/* total */
+.product-total {
+  margin-top: 30px;
+  padding-top: 2%;
+  border-top: 4px solid silver;
+  width: 35%;
+  display: flex;
+}
+.purchase-btn {
+  margin-top: 25px;
+  width: 150px;
+  height: 50px;
+  margin-left: 80px;
+  border: none;
+  background: rgba(58, 218, 151, 0.7);
+  margin-left: 40%;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Detail-Cloths</title>
+    <style>
+      .frameDetail {
+        width: 90%;
+        min-height: 550px;
+        margin-left: 5%;
+        background: rgba(43, 6, 77, 0.5);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      .deleteShow {
+        position: absolute;
+        margin-left: 40%;
+        margin-top: -10%;
+        color: white;
+      }
+      .descText {
+        width: 150px;
+        height: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <span class="frameDetail">
+      <b class="deleteShow">X</b>
+      <p class="descText">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. id dignissimos
+        distinctio? Voluptatibus, voluptates.
+      </p>
+      <img
+        src="img-stationary/stat7.png"
+        width="300px"
+        height="200px"
+        class="imgE"
+      />
+      <img
+        src="img-stationary/stat9.jpeg"
+        width="300px"
+        height="200px"
+        class="imgE1"
+      />
+    </span>
+    <script>
+      let deleteBtn = document.querySelector(".deleteShow");
+      let bodyContent = document.querySelector(".frameDetail");
+
+      let showHide = true;
+      deleteBtn.addEventListener("click", function() {
+        showHide = !showHide;
+        if (!showHide) {
+          bodyContent.style.display = "none";
+        } else if (showHide) {
+          bodyContent.style.display = "block";
+        }
+      });
+
+      /* photo effect */
+      let imageElectronics = document.querySelector(".imgE");
+      let imageElectronics1 = document.querySelector(".imgE1");
+      imageElectronics.onmouseenter = function() {
+        imageElectronics.style.width = "60%";
+        imageElectronics.style.position = "absolute";
+        imageElectronics.style.height = "500px";
+        imageElectronics.style.marginTop = "10px";
+        imageElectronics.style.background = "white";
+      };
+      imageElectronics.onmouseleave = function() {
+        document.location.reload();
+      };
+      /* second one */
+      imageElectronics1.onmouseenter = function() {
+        imageElectronics1.style.width = "60%";
+        imageElectronics1.style.position = "absolute";
+        imageElectronics1.style.height = "500px";
+        imageElectronics1.style.marginTop = "10px";
+        imageElectronics1.style.background = "white";
+      };
+      /* second one */
+      imageElectronics1.onmouseleave = function() {
+        document.location.reload();
+      };
+    </script>
+  </body>
+</html>
