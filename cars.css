@@ -114,6 +114,13 @@ h3 {
 }
 /* media query */
 @media screen and (max-width: 650px) {
+  .basket-list {
+    width: 90%;
+    margin-left: 5%;
+  }
+  .basket-products {
+    width: 100%;
+  }
   .myUl {
     width: 80%;
     min-height: 40%;
