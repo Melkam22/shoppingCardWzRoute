@@ -100,7 +100,9 @@ function pushItemToBasket(pushedTitle, pushedPrice, pushedImage) {
 let purchaseIt = document.getElementsByClassName("purchase-btn")[0];
 purchaseIt.addEventListener("click", updatePrice);
 function updatePrice() {
-  alert("purchase cloths clicked");
+  alert(
+    "Thank you for your purchase! contact the seller using the address given on the displayed product."
+  );
   let updateTotalFunc = document.getElementsByClassName("basket-products")[0];
   while (updateTotalFunc.hasChildNodes()) {
     updateTotalFunc.removeChild(updateTotalFunc.firstChild);
