@@ -1,3 +1,41 @@
+/* typing animation */
+.main-title {
+  width: 100%;
+  width: 80ch;
+  font-size: 25px;
+  /* text-align: center; */
+  color: black;
+  -webkit-text-stroke-color: skyblue;
+  -webkit-text-stroke-width: 1px;
+  text-shadow: 3px 5px 6px black;
+}
+.main-title > h2 {
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.2em;
+  opacity: 1;
+  border-right: 3px solid red;
+  animation: printing 15s steps(20, end) infinite, blink 0.5s step-end infinite;
+}
+@keyframes printing {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 50%;
+  }
+}
+@keyframes blink {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: red;
+  }
+}
+
 /* advertisement*/
 .h4 {
   width: 99%;
@@ -114,8 +152,7 @@ h3 {
 /* media query */
 @media screen and (max-width: 650px) {
   .basket-list {
-    width: 90%;
-    margin-left: 5%;
+    min-width: 90%;
   }
   .basket-products {
     width: 100%;
@@ -138,6 +175,44 @@ h3 {
     background: rgba(84, 74, 64, 0.4);
     padding: 0px 5px;
     margin-top: 2px;
+  }
+  /* typing animation */
+  .main-title {
+    width: 100%;
+    width: 40ch;
+    font-size: 20px;
+    /* text-align: center; */
+    color: black;
+    -webkit-text-stroke-color: skyblue;
+    -webkit-text-stroke-width: 1px;
+    text-shadow: 3px 5px 6px black;
+  }
+  .main-title > h2 {
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 0.2em;
+    opacity: 1;
+    border-right: 3px solid red;
+    animation: printing 15s steps(20, end) infinite,
+      blink 0.5s step-end infinite;
+  }
+  @keyframes printing {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 80%;
+    }
+  }
+  @keyframes blink {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: red;
+    }
   }
 }
 /*  */
