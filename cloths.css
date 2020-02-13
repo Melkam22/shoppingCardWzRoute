@@ -1,3 +1,40 @@
+.main-title {
+  width: 60%;
+  width: 60ch;
+  font-size: 25px;
+  /* text-align: center; */
+  color: black;
+  -webkit-text-stroke-color: skyblue;
+  -webkit-text-stroke-width: 1px;
+  text-shadow: 3px 5px 6px black;
+}
+.main-title > h2 {
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.2em;
+  opacity: 1;
+  border-right: 3px solid red;
+  animation: printing 15s steps(20, end) infinite, blink 0.5s step-end infinite;
+}
+@keyframes printing {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 45%;
+  }
+}
+@keyframes blink {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: red;
+  }
+}
+
 /* slide publicity */
 .h4 {
   width: 99%;
